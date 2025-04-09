@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel AssistFarmaBot</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #f5f5f5; }
+    h1 { color: #145; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background: #198754; color: white; }
+    tr:nth-child(even) { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Painel de Acessos – AssistFarmaBot</h1>
+
+  <h2>✅ Usuários Autorizados</h2>
+  <table id="tabela-autorizados">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CRF</th>
+        <th>ID Telegram</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>🕓 Solicitações Pendentes</h2>
+  <table id="tabela-pendentes">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CRF</th>
+        <th>ID Telegram</th>
+        <th>Senha</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>
